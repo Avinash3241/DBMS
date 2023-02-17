@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>React App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <div>
+      <h1 id="h1">Heading</h1>
+      <button id="li" onclick="window.location.href = 'login.html'">Log In</button>
+      <!-- <button id="su">Sign Up</button> -->
+    </div>
+  <form>
+    <div id="s2">
+    <!-- <button id="type"> -->
+      <select id="type" name="Search_type">
+      <option value="UserId">UserId</option>
+      <option value="Single_Tag">Single Tag</option>
+      <option value="Multiple_Tags">Multiple Tags</option>
+    </select>
+    <!-- </button> -->
+    <input id="s1" type="search" name="search" placeholder="Search"/>
+    <button type="submit" onclick="getParam()" style="height:40px;width:80px;font-size: 20px;">Search</button>
+    </div>
+  </form>
+  <hr id="hr">
+  <div id="box">
+    <div id="post"> <!--start,store post's html in <App/> in index.js--> 
+      <div>
+        <span class="tab"></span>
+        <a href="https://stackoverflow.com/questions/75463729/npm-err-code-eintegrity-when-npm-install" style="text-decoration: none;">
+         (some icon)  npm ERR! code EINTEGRITY when npm install
+        </a>
+        <span class="largetab"></span>
+        <span id="up" class="glyphicon glyphicon-thumbs-up" style="font-size: 30px;"></span>
+        <span>&ensp;10</span>
+        &ensp;
+        <span id="down" class="glyphicon glyphicon-thumbs-down" style="font-size: 30px;"></span>
+        <span>&ensp;5</span>
+        <!-- #upvotes,#downvotes,#answers -->
+      </div>
+      <br>
+      <div id="tags">
+        <span class="tab"></span>
+        <a id="tag">npm</a>
+        <a id="tag">install</a>
+      </div>
+      <br><hr>
+    </div> <!--end--> 
+    <div id="post">
+      <div>
+        <span class="tab"></span>
+        <a href="https://stackoverflow.com/questions/75463993/what-does-async-actually-do-in-fastapi" style="text-decoration: none;">
+         (some icon)  What does async actually do in FASTapi?
+        <!-- #upvotes,#downvotes,#answers -->
+      </div>
+      <br>
+      <div id="tags">
+        <span class="tab"></span>
+        <a id="tag">npm</a>
+        <a id="tag">install</a>
+      </div>
+      <br><hr>
+    </div>
+    <div id="post">
+      <div>
+        <span class="tab"></span>
+        <a href="https://stackoverflow.com/questions/75463994/why-the-role-status-attribute-doesnt-work-correctly" style="text-decoration: none;">
+         (some icon)  Why the role="status" attribute doesn't correctly?
+        </a>
+        <!-- #upvotes,#downvotes,#answers -->
+      </div>
+      <br>
+      <div id="tags">
+        <span class="tab"></span>
+        <a id="tag">npm</a>
+        <a id="tag">install</a>
+      </div>
+      <br><hr>
+    </div>
+  </div>
+  <script>
+    </script>
+  </body>
+</html>

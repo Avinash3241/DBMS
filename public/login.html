@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LogIn Page</title>
+        <!-- <style rel="style" src="login.css"></style> -->
+    </head>
+    <body>
+        <div id="lif">
+            <form action="./src/server.js" method="post">
+            <p>UserName</p>
+            <input type="text" spellcheck="false" name="username" id="un" placeholder="Enter your UserName"/>
+            <p>Password</p>
+            <input type="password" name="password" id="pw" placeholder="Enter your Password"/><br>
+            <br>
+            <button  type="submit" name="submit" id="li">Login</button>
+            </form>
+        </div>
+    </body>
+</html>
+
+<style>
+    #lif{
+        align-items: center;
+        /* text-align: center */
+        /* text-size :10px; */
+        font-size: 20px;
+    border: 1px solid;
+    position: fixed;
+    /* align-content: center; */
+
+    top:25%;
+    left:37%;
+    padding: 20px 50px;
+    /* background-color: black; */
+}
+#un,#pw,#li{
+    font-size: 20px;
+}
+</style>
